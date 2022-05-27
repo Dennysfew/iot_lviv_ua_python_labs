@@ -7,6 +7,6 @@ class WashingMachine(HomeAppliances):
         super().__init__(name, price, weight)
         self.weight_maximum_load = weight_maximum_load
 
-    def get_washing_machine(self) -> str:
+    def __str__(self):
         return f'The name is {self.name} price is {self.price} weight {self.weight} the weight maximum you can load ' \
                f'{self.weight_maximum_load}'

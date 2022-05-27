@@ -7,9 +7,6 @@ class RadioReceiver(HomeAppliances):
         super().__init__(name, price, weight)
         self.number_of_saved_station = number_of_saved_station
 
-    def get_radio_receiver(self) -> str:
-        return "The name is {} price is {} weight {}, number of station that you can save: ".format(
-            self.name,
-            self.price,
-            self.weight,
-            self.number_of_saved_station)
+    def __str__(self):
+        return f'The name is {self.name} price is {self.price} weight {self.weight},' \
+               f'number of station that you can save:{self.number_of_saved_station} '

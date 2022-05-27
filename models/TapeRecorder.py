@@ -7,8 +7,7 @@ class TapeRecorder(HomeAppliances):
         super().__init__(name, price, weight)
         self.number_of_musics = number_of_musics
 
+    def __str__(self):
+        return f'The name is {self.name} price is {self.price} weight {self.weight} has the number of ' \
+               f'musics equal: {self.number_of_musics}'
 
-    def get_radio_receiver(self) -> str:
-        return "The name is {} price is {} weight {} has the number of musics equel: {}".format(self.name, self.price,
-                                                                                                self.weight,
-                                                                                                self.number_of_musics)

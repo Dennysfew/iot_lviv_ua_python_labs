@@ -7,6 +7,6 @@ class Television(HomeAppliances):
         super().__init__(name, price, weight)
         self.size_of_screen = size_of_screen
 
-    def get_television(self) -> str:
-        return "The name is {} price is {} weight {} has the screen of size {}".format(self.name, self.price,
-                                                                                       self.weight, self.size_of_screen)
+    def __str__(self):
+        return f'The name is {self.name} price is {self.price} weight {self.weight} has the screen of ' \
+               f'size {self.size_of_screen}'
